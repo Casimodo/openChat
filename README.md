@@ -1,5 +1,30 @@
-# Modern Chat — Express + EJS + Socket.IO
+# Open Community Chat
 
+> Plateforme de communication communautaire open source développée en Node.js, Express, EJS et Socket.IO.
+
+L'objectif de ce projet est de proposer une plateforme de communication moderne, libre et auto-hébergeable tout en restant accessible aux développeurs débutants.
+
+---
+
+## Philosophie du projet
+
+Ce projet a été conçu autour d'une idée simple :
+
+La simplicité favorise l'apprentissage.
+
+De nombreux projets modernes deviennent rapidement difficiles à comprendre à cause :
+
+- des frameworks complexes ;
+- des outils de build ;
+- des systèmes de compilation ;
+- des dizaines de dépendances.
+
+L'objectif ici est différent :
+
+```bash
+git clone ...
+npm install
+npm start
 Petit projet de chat multi utilisateur en temps réel avec :
 
 - **Node.js** : exécute JavaScript côté serveur.
@@ -30,6 +55,83 @@ chat-express-ejs-socketio/
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## Pourquoi ces technologies ?
+
+## Node.js
+Node.js permet d'utiliser JavaScript côté serveur.
+
+> ### Avantages
+> - Un seul langage pour tout le projet.
+> - Excellentes performances pour les applications temps réel.
+> - Très grande communauté.
+> - Écosystème npm très riche.
+
+## Express
+Express est volontairement choisi pour sa simplicité.
+
+> ### Avantages
+> - Léger.
+> - Rapide.
+> - Facile à apprendre.
+> - Très documenté.
+
+## EJS
+EJS est un moteur de template simple.
+
+> ### Avantages
+> - Très proche du HTML classique.
+> - Aucun build.
+> - Aucune compilation.
+> - Très facile à comprendre.
+
+## Socket.IO
+Socket.IO est utilisé pour le temps réel.
+
+> ### Avantages
+> - Gestion simplifiée des WebSockets.
+> - Reconnexion automatique.
+> - Très adapté aux chats multi-utilisateurs.
+
+## Pourquoi React, Vue, Angular ou Svelte ne sont pas utilisés ?
+
+> Ces outils sont excellents mais apportent souvent :
+> - une étape de compilation ;
+> - un système de build ;
+> - davantage de dépendances ;
+> - davantage de complexité.
+>
+> L'objectif du projet est de permettre aux débutants d'apprendre les fondamentaux du Web :
+> - HTML
+> - CSS
+> - JavaScript
+> - DOM
+> - HTTP
+> - WebSockets
+
+Une fois ces bases maîtrisées, apprendre un framework devient beaucoup plus simple.
+
+---
+
+# Vision du projet
+
+> Le projet démarre sous la forme d'un simple chat temps réel.
+> À terme il pourra évoluer vers :
+> 
+> - Salons multiples
+> - Messages privés
+> - Gestion des rôles
+> - Partage de fichiers
+> - Plugins
+> - Bots
+> - Appels vocaux
+> - Appels vidéo
+> - Fédération de serveurs
+> - Applications mobiles
+
+---
 
 ## Installation depuis un PC vierge
 

@@ -1,0 +1,3 @@
+# Plugins
+
+Architecture extensible envisagée.

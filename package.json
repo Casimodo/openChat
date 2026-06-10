@@ -4,6 +4,10 @@
   "description": "Petit chat multi utilisateur avec Node.js, Express, EJS et Socket.IO",
   "main": "src/server.js",
   "type": "commonjs",
+  "author": {
+    "name": "Commu tontonCasi voir discord",
+    "url": "https://discord.gg/qPSwbHNMRd"
+  },
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
