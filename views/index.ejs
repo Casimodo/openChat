@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= appName %></title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="/js/chat.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="chat-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand__logo">💬</span>
+          <div>
+            <h1><%= appName %></h1>
+            <p>Chat temps réel</p>
+          </div>
+        </div>
+
+        <div class="card join-card" id="joinCard">
+          <label for="username">Ton pseudo</label>
+          <div class="join-row">
+            <input id="username" type="text" maxlength="24" placeholder="Ex: Alex" autocomplete="off" />
+            <button id="joinButton" type="button">Entrer</button>
+          </div>
+        </div>
+
+        <div class="card users-card">
+          <h2>Connectés</h2>
+          <ul id="usersList" class="users-list"></ul>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <header class="chat-header">
+          <div>
+            <h2>Salon général</h2>
+            <p id="typingIndicator" class="typing"></p>
+          </div>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="messageForm" class="message-form">
+          <input id="messageInput" type="text" maxlength="500" placeholder="Écris ton message..." autocomplete="off" disabled />
+          <button id="sendButton" type="submit" disabled>Envoyer</button>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
